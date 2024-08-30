@@ -1,0 +1,139 @@
+﻿@model UserAccount
+
+<form method="post">
+	First Name <input type="text" asp-for="UserFname" class="form-control"/><br />
+	Last Name<input type="text" asp-for="UserLname" class="form-control"/><br />
+	Mobile<input type="text" asp-for="UserMobile" class="form-control"/><br />
+	Email<input type="email" asp-for="UserEmail" class="form-control"/><br />
+	Password<input type="text" asp-for="UserPass" class="form-control"/><br />
+
+	<input type="submit" value="Save" class="btn btn-primary"/>
+
+</form>
+
+<br />
+<a asp-controller="Auth" asp-action="SignIn">SignIn</a>
+
+
+
+@* <div id="container" class="container">
+	<!-- FORM SECTION -->
+	<div class="row">
+		<!-- SIGN UP -->
+		<div class="col align-items-center flex-col sign-up">
+			<div class="form-wrapper align-items-center">
+				<div class="form sign-up">
+					<form method="post">
+					<div class="input-group">
+						<i class='bx bxs-user'></i>
+						<input type="text" asp-for="UserFname" asp placeholder="First Name">
+					</div>
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" asp-for="UserLname" asp placeholder="Last Name">
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" asp-for="UserMobile" asp placeholder="Mobile">
+						</div>
+					<div class="input-group">
+						<i class='bx bx-mail-send'></i>
+						<input type="email" asp-for="UserEmail" placeholder="Email">
+							<span class="text-danger" asp-validation-for="UserEmail"></span>
+					</div>
+					<div class="input-group">
+						<i class='bx bxs-lock-alt'></i>
+						<input type="password" asp-for="UserPass" placeholder="Password">
+					</div>
+					</form>
+					<button>
+						Sign up
+					</button>
+					<p>
+						<span>
+							Already have an account?
+						</span>
+						<b onclick="toggle()" class="pointer">
+							Sign in here
+						</b>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<!-- END SIGN UP -->
+		<!-- SIGN IN -->
+		<div class="col align-items-center flex-col sign-in">
+			<div class="form-wrapper align-items-center">
+				<div class="form sign-in">
+					<div class="input-group">
+						<i class='bx bxs-user'></i>
+						<input type="text" placeholder="Username">
+					</div>
+					<div class="input-group">
+						<i class='bx bxs-lock-alt'></i>
+						<input type="password" placeholder="Password">
+					</div>
+					<button>
+						Sign in
+					</button>
+					<p>
+						<b>
+							Forgot password?
+						</b>
+					</p>
+					<p>
+						<span>
+							Don't have an account?
+						</span>
+						<b onclick="toggle()" class="pointer">
+							Sign up here
+						</b>
+					</p>
+				</div>
+			</div>
+			<div class="form-wrapper">
+			</div>
+		</div>
+		<!-- END SIGN IN -->
+	</div>
+	<!-- END FORM SECTION -->
+	<!-- CONTENT SECTION -->
+	<div class="row content-row">
+		<!-- SIGN IN CONTENT -->
+		<div class="col align-items-center flex-col">
+			<div class="text sign-in">
+				<h2>
+					Welcome
+				</h2>
+
+			</div>
+			<div class="img sign-in">
+			</div>
+		</div>
+		<!-- END SIGN IN CONTENT -->
+		<!-- SIGN UP CONTENT -->
+		<div class="col align-items-center flex-col">
+			<div class="img sign-up">
+			</div>
+			<div class="text sign-up">
+				<h2>
+					Join with us
+				</h2>
+
+			</div>
+		</div>
+		<!-- END SIGN UP CONTENT -->
+	</div>
+	<!-- END CONTENT SECTION -->
+</div>
+
+
+<link href="~/css/auth.css" rel="stylesheet" />
+<script src="~/js/auth.js"></script> *@
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
